@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #000000;
+    --cor2: #575757;
+    --cor3: #808080;
+    --cor4: #A8A8A8;
+    --cor5: #E2E2E2;
+    
+    --texto_header: 'Luckiest Guy', 'cursive';
+    --texto_principal: Verdana, Tahoma, sans-serif;
+}
+
+header {
+    font-family: var(--texto_header);
+    font-size: 8em;
+    font-weight: lighter;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 30px;
+    text-align: center;
+}
+
+.cabecalho {
+    font-family: var(--texto_principal);
+    font-size: 1em;
+}
