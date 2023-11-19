@@ -20,19 +20,18 @@
 }
 
 header {
-    font-family: var(--texto_header);
-    font-size: 9em;
-    font-weight: lighter;
     color: var(--cor5);
     background-color: var(--cor1);
     padding: 50px;
     text-align: center;
 }
 
+header h1 {
+
+}
+
 header p {
-    font-family: var(--texto_principal);
-    font-size: 0.1em;
-    font-weight: 400;
+    
 }
 
 header a {
