@@ -65,26 +65,28 @@ section.imagem > p {
     padding: 8px;
     margin-left: 30px;
     border-radius: 10px;
+    text-shadow: 1px 1px 1px black;;
 }
 
 section.normal > p {
     margin: 15px;
 }
 
-section.normal {
-
+section > p {
+    padding-bottom: 1em;
+    line-height: 1.7em;
 }
 
 section#fundo01 {
-    background-image: url('../imagens/imagem_cordel01.png');
+    background-image: url('../imagens/fundo01.jpg');
 }
 
 section#fundo02 {
-    background-image: url('../imagens/imagem_cordel03.jpeg');
+    background-image: url('../imagens/fundo02.jpg');
 }
 
 section#fundo03 {
-    background-image: url('../imagens/imagem_cordel02.jpeg');
+    background-image: url('../imagens/fundo04.jpg');
 }
 
 footer {
