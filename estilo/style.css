@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
 
 * {
     margin: 0px;
@@ -9,52 +9,88 @@
 }
 
 :root {
-    --cor1: #000000;
-    --cor2: #575757;
-    --cor3: #808080;
-    --cor4: #A8A8A8;
-    --cor5: #E2E2E2;
-    
-    --texto_header: 'Luckiest Guy', 'cursive';
-    --texto_principal: 'Courgette', Verdana, 'cursive';
+    --fonte_titulo: 'Lilita One', sans-serif;
+    --fonte_principal: 'Charm', 'cursive';
+    --fonte_secundaria: Tahoma, Verdana, 'cursive';
 }
 
 header {
-    color: var(--cor5);
-    background-color: var(--cor1);
-    padding: 50px;
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
-header h1 {
-
+header > h1 {
+    font-family: var(--fonte_titulo);
+    font-weight: lighter;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 8vw;
 }
 
-header p {
+header > p {
+    font-family: var(--fonte_secundaria);
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    font-variant: small-caps;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: lightgoldenrodyellow;
+}
+
+section {
+    padding: 6vh;
+    font-family: var(--fonte_principal);
+    padding: 15px;
+    font-size: 3.3vw;
+}
+
+section.imagem {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 
-header a {
-    color: var(--cor5);
-    text-decoration: none;
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    margin-left: 30px;
+    border-radius: 10px;
 }
 
-header a:hover {
-    text-decoration: underline;
-    color: var(--cor3);
+section.normal > p {
+    margin: 15px;
 }
 
-main pre {
-    font-family: var(--texto_principal);
-    font-weight: 700;
-    font-size: 4em;
-    margin-top: 100px;
-    line-height: 2em;
+section.normal {
+
 }
 
-.fundo {
-    background-image: url('..imagens/background001.jpg');
+section#fundo01 {
+    background-image: url('../imagens/imagem_cordel01.png');
+}
+
+section#fundo02 {
+    background-image: url('../imagens/imagem_cordel03.jpeg');
+}
+
+section#fundo03 {
+    background-image: url('../imagens/imagem_cordel02.jpeg');
+}
+
+footer {
+    font-family: var(--fonte_secundaria);
     background-color: black;
     color: white;
-    width: 900px;
+    text-align: center;
+    padding: 8px;
 }

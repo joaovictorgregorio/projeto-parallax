@@ -1,3 +1,3 @@
 # projeto-parallax
- Projeto com efeito parallax do Curso em Video
+ Projeto desenvolvido com efeito parallax
 
